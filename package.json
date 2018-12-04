@@ -1,0 +1,36 @@
+{
+  "name": "stupid-app-boilerplate",
+  "version": "1.0.0",
+  "description": "you're stupid if you read this",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "npm run start-server & npm run build-watch",
+    "start-server": "nodemon --watch server -e js,html server/main.js",
+    "build-watch": "webpack -w",
+    "start": "npm run start:dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node ./bin/seed"
+  },
+  "author": "It's Top mofo",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.18.7",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.7.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.3.1",
+    "sequelize": "^4.41.2"
+  }
+}
